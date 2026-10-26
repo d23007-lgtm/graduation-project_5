@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>こだわりの種｜Craft Discovery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#" data-page="home" aria-label="こだわりの種 ホーム"><span class="brand-mark">種</span><span><strong>こだわりの種</strong><small>CRAFT DISCOVERY / GRADUATION PROJECT</small></span></a>
+  <nav aria-label="メインナビゲーション"><button class="nav active" data-page="home">見つける</button><button class="nav" data-page="saved">発想ノート <span id="savedCount">0</span></button></nav>
+</header>
+<main>
+  <section id="homePage" class="page active">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">LOOK CLOSER, THINK DIFFERENTLY</p><h1>その「こだわり」から、<br><em>新しい発想</em>を見つけよう。</h1><p class="hero-description">工芸の作り手が大切にしたことを知る。いつもの見方を少し変えてみる。そして、自分の制作に持ち帰る。</p><button class="primary" id="start">発想の種を見つける <span>↗</span></button><p class="hero-note">正解を探すのではなく、考え方のきっかけを探す体験です。</p></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="seed seed-one"></div><div class="seed seed-two"></div><div class="seed seed-three"></div><span>NOTICE<br>→ REFRAME<br>→ CREATE</span></div>
+    </section>
+    <section class="discovery-section" id="discover">
+      <div class="section-heading"><div><p class="eyebrow">START WITH A QUESTION</p><h2>気になる「こだわり」から、始めよう。</h2></div><p>分野や技法から選ぶのではなく、<br>作り手の判断や考え方に注目します。</p></div>
+      <div class="prompt-strip"><span class="prompt-mark">?</span><div><strong>自分なら、どう考えるだろう？</strong><p>カードをひとつ選んで、いつものものの見方と比べてみてください。</p></div></div>
+      <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="こだわり・考え方・キーワードを探す" aria-label="キーワード検索"></label><button class="text-button" id="clearSearch">すべて表示 ↗</button></div>
+      <div id="featured" class="cards"></div><p id="resultCount" class="result-count"></p>
+      <p class="prototype-note">※掲載内容は体験の流れを確かめるための試作サンプルです。人物・作品に関する解釈や出典は、研究・公開前に確認する必要があります。</p>
+    </section>
+    <section class="how-section"><p class="eyebrow">A SMALL JOURNEY</p><h2>発見を、制作のアイデアへ。</h2><div class="steps"><article><span>01</span><h3>出会う</h3><p>工芸の中にある、気になる判断や工夫を見つける。</p></article><article><span>02</span><h3>見方が変わる</h3><p>背景を知り、自分が当たり前だと思っていたことと比べる。</p></article><article><span>03</span><h3>自分の制作へ</h3><p>発見した視点を、自分の制作で試せる案に置き換える。</p></article></div></section>
+  </section>
+  <section id="detailPage" class="page"><button class="back" id="detailBack">← 発見一覧へ戻る</button><article id="detail" class="detail"></article></section>
+  <section id="savedPage" class="page"><div class="page-intro"><p class="eyebrow">YOUR IDEA NOTE</p><h1>発想ノート</h1><p>気になった考え方と、自分の制作へのつながりを見返せます。</p></div><div id="saved"></div></section>
+</main>
+<footer><span>こだわりの種　/　卒業研究プロトタイプ</span><span>気づきを、次のものづくりへ。</span></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body></html>
